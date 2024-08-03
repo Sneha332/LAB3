@@ -1,0 +1,33 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Supplier -->
+  <rect x="50" y="150" width="100" height="100" fill="#3498db" />
+  <text x="100" y="220" font-size="16" text-anchor="middle" fill="white">Supplier</text>
+  
+  <!-- Arrow from Supplier to Manufacturer -->
+  <line x1="150" y1="200" x2="250" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Manufacturer -->
+  <rect x="250" y="150" width="100" height="100" fill="#2ecc71" />
+  <text x="300" y="220" font-size="16" text-anchor="middle" fill="white">Manufacturer</text>
+  
+  <!-- Arrow from Manufacturer to Distributor -->
+  <line x1="350" y1="200" x2="450" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Distributor -->
+  <rect x="450" y="150" width="100" height="100" fill="#e74c3c" />
+  <text x="500" y="220" font-size="16" text-anchor="middle" fill="white">Distributor</text>
+  
+  <!-- Arrow from Distributor to Retailer -->
+  <line x1="550" y1="200" x2="650" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)" />
+  
+  <!-- Retailer -->
+  <rect x="650" y="150" width="100" height="100" fill="#f39c12" />
+  <text x="700" y="220" font-size="16" text-anchor="middle" fill="white">Retailer</text>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>
